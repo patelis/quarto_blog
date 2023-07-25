@@ -1,5 +1,5 @@
 ---
-title: "quarto_blog"
+title: "Konstantinos Patelis"
 listing:
   contents: posts
   sort: "date desc"
