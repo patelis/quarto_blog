@@ -3,8 +3,15 @@ project:
 
 website:
   title: "Konstantinos Patelis"
+  site-url: "https://www.kpatelis.com/"
   navbar:
     right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Posts"
+        href: index.qmd
+      - text: "Projects"
+        href: project_list.qmd
       - text: "About"
         href: about.qmd
       - icon: github

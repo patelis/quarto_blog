@@ -1,9 +1,17 @@
 [
   {
+    "listing": "/project_list.html",
+    "items": [
+      "/projects/post-with-code/index.html",
+      "/projects/welcome/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/welcome/index.html",
+      "/posts/classification-modeling-workflow-using-tidymodels/index.html"
     ]
   }
 ]
