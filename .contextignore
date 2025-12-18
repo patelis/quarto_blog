@@ -64,3 +64,5 @@ pip-log.txt
 # 5. MODEL CHECKPOINTS (Optional)
 # ----------------------------
 models/*
+
+_publish.yml

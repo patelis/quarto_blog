@@ -1,6 +1,7 @@
 ---
 title: "Konstantinos Patelis"
 image: assets/profile.png
+page-layout: full
 about:
   template: trestles
   links:
@@ -29,3 +30,11 @@ I have been programming all the way back to my university studies and have settl
 In the Portfolio section, I'll be showcasing projects touching upon different areas and uses of AI, aiming to present complete products, while in the Blog section I'll either walk through some projects or write about things I find interesting.
 
 When not at work or busy with other data-related projects, I enjoy watching movies and good animated shows, hiking, playing board games, and recently working on LEGO sets.
+
+### My Focus
+
+- <i class="bi bi-bar-chart-fill"></i> &nbsp; **Data Visualization** (D3.js, ggplot2)
+- <i class="bi bi-cpu-fill"></i> &nbsp; **Machine Learning** (PyTorch, Scikit-Learn)
+- <i class="bi bi-globe"></i> &nbsp; **Web Development** (Quarto, React)
+
+[Explore my Portfolio](portfolio.qmd){.btn .btn-outline-primary role="button"}

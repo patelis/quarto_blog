@@ -24,8 +24,8 @@ format:
   html:
     respect-user-color-scheme: true
     theme: 
-      light: lux
-      dark: cosmo
+      light: cosmo
+      dark: darkly
     css: styles.css
 
 editor: visual

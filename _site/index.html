@@ -39,8 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4a5b2c810a6d69bdc3f932d9c90ff667.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-944ceb941c07a9d5fd1e6df1310fef70.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8e6502f225a09644b09e01ba0b11474a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-4486aa3ca1821ad7e675ebf7abc646f4.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,13 +73,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 <meta name="twitter:title" content="Konstantinos Patelis">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://silver-tulumba-34ca65.netlify.app/assets/profile.png">
+<meta name="twitter:image" content="https://www.kpatelis.com/assets/profile.png">
 <meta name="twitter:image-height" content="1228">
 <meta name="twitter:image-width" content="1228">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -127,12 +127,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles">
+<div class="quarto-about-trestles column-page">
   <div class="about-entity">
     <img src="assets/profile.png" class="about-image
   rounded " style="width: 20em;">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">Konstantinos Patelis</h1>
 </div>
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
   </div>
 </header>
     <div class="about-links">
@@ -162,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
   </a>
 </div>
   </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
+  <div class="about-contents"><main class="content column-page" id="quarto-document-content">
 <section id="hello-there" class="level2">
 <h2 data-anchor-id="hello-there">Hello there!!</h2>
 <p>I live in Zurich and work as a Quantitative Analyst with a focus on Combined Stress Testing models at UBS. Lately my work revolves around developing GenAI solutions and products using LangGraph and Azure OpenAI, while I am simultaneously the Product Owner for the Lombard &amp; Retail Pod managing analytics for diverse portfolios.</p>
@@ -170,8 +170,17 @@ ul.task-list li input[type="checkbox"] {
 <p>I have been programming all the way back to my university studies and have settled to use Python and R for most of my work and day-to-day needs. I have experience analyzing huge amounts of data, building and training ML and DL models, deploying them as APIs and overall crafting data products and solutions.</p>
 <p>In the Portfolio section, I’ll be showcasing projects touching upon different areas and uses of AI, aiming to present complete products, while in the Blog section I’ll either walk through some projects or write about things I find interesting.</p>
 <p>When not at work or busy with other data-related projects, I enjoy watching movies and good animated shows, hiking, playing board games, and recently working on LEGO sets.</p>
+<section id="my-focus" class="level3">
+<h3 data-anchor-id="my-focus">My Focus</h3>
+<ul>
+<li><i class="bi bi-bar-chart-fill"></i> &nbsp; <strong>Data Visualization</strong> (D3.js, ggplot2)</li>
+<li><i class="bi bi-cpu-fill"></i> &nbsp; <strong>Machine Learning</strong> (PyTorch, Scikit-Learn)</li>
+<li><i class="bi bi-globe"></i> &nbsp; <strong>Web Development</strong> (Quarto, React)</li>
+</ul>
+<p><a href="./portfolio.html" class="btn btn-outline-primary" role="button">Explore my Portfolio</a></p>
 
 
+</section>
 </section>
 </main></div>
 </div>
@@ -403,7 +412,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/silver-tulumba-34ca65\.netlify\.app");
+      var filterRegex = new RegExp("https:\/\/www\.kpatelis\.com\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
