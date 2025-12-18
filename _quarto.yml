@@ -1,6 +1,8 @@
 project:
   type: website
-
+  render:
+    - "*.qmd"
+    - "!old/"
 website:
   title: "Konstantinos Patelis"
   site-url: "https://www.kpatelis.com/"
@@ -8,21 +10,22 @@ website:
     right:
       - text: "Home"
         href: index.qmd
-      - text: "Posts"
-        href: index.qmd
-      - text: "Projects"
-        href: project_list.qmd
-      - text: "About"
-        href: about.qmd
+      - text: "Portfolio"
+        href: portfolio.qmd
+      - text: "Blog"
+        href: blog.qmd
       - icon: github
         href: https://github.com/patelis
       - icon: twitter
         href: https://twitter.com/k_patelis
   twitter-card: true
-  favicon: "favicon.png"
+  favicon: "assets/favicon.png"
 format:
   html:
-    theme: lux
+    respect-user-color-scheme: true
+    theme: 
+      light: lux
+      dark: cosmo
     css: styles.css
 
 editor: visual

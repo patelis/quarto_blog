@@ -1,1 +1,187 @@
 /* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --bs-font-sans-serif: 'Inter', system-ui, -apple-system, sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+
+  /* Light Mode Defaults (matching Lux/User Reference) */
+  --quarto-bg: #ffffff;
+  --quarto-text: #373a3c;
+  --quarto-border: #dee2e6;
+  --primary-color: #2780e3;
+  /* Cosmo Blue */
+  --code-bg: #f8f9fa;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  background-color: var(--quarto-bg);
+  color: var(--quarto-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- Dark Mode Overrides --- */
+/* Quarto adds .quarto-dark to body when dark theme is active */
+body.quarto-dark {
+  --quarto-bg: #222222;
+  --quarto-text: #f0f0f0;
+  --quarto-border: #444444;
+  --code-bg: #2d2d2d;
+
+  /* Bootstrap overrides for dark mode */
+  --bs-body-bg: #222222;
+  --bs-body-color: #f0f0f0;
+  --bs-heading-color: #ffffff;
+
+  /* Force Primary Color to match Cosmo Blue, overriding Darkly's Green */
+  --bs-primary: #2780e3;
+  --primary-color: #2780e3;
+}
+
+/* Ensure links and other elements respect the dark theme */
+body.quarto-dark a {
+  color: #5aaafa;
+  /* Light blue for links in dark mode */
+}
+
+/* Override Bootstrap Darkly Buttons if they use the green primary */
+body.quarto-dark .btn-primary {
+  background-color: #2780e3;
+  border-color: #2780e3;
+}
+
+body.quarto-dark .card {
+  background-color: #2c2c2c;
+  border-color: var(--quarto-border);
+}
+
+body.quarto-dark .list-group-item {
+  background-color: #2c2c2c;
+  border-color: var(--quarto-border);
+}
+
+/* --- Navbar --- */
+.navbar {
+  background-color: var(--quarto-bg) !important;
+  border-bottom: 1px solid var(--quarto-border);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--quarto-text) !important;
+}
+
+.nav-link {
+  color: var(--quarto-text) !important;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  opacity: 1;
+  color: var(--primary-color) !important;
+}
+
+/* --- Trestles Layout (Home/About) --- */
+.quarto-about-trestles .about-entity {
+  border-right: 1px solid var(--quarto-border);
+}
+
+.quarto-about-trestles .about-image {
+  border: 4px solid var(--quarto-border);
+}
+
+.about-link {
+  border: 1px solid var(--quarto-border);
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  transition: all 0.2s;
+}
+
+.about-link:hover {
+  background-color: rgba(39, 128, 227, 0.1);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* --- Portfolio Grid Styles --- */
+/* Quarto's grid items */
+.quarto-grid-item {
+  border: 1px solid var(--quarto-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--quarto-bg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quarto-grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--quarto-border);
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Blog Post List --- */
+.quarto-post {
+  border-bottom: 1px solid var(--quarto-border);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quarto-post .thumbnail {
+  border-radius: 6px;
+}
+
+/* --- Code Blocks (VS Code Style) --- */
+div.sourceCode {
+  background-color: #1e1e1e !important;
+  /* VS Code Dark Grey */
+  color: #d4d4d4;
+  border-radius: 12px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Traffic Lights */
+div.sourceCode::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+}
+
+/* Scrollbar */
+div.sourceCode pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+div.sourceCode pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+}

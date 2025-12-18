@@ -1,0 +1,41 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Post With Code\"\n",
+        "author: \"Harlow Malloc\"\n",
+        "date: \"2023-07-13\"\n",
+        "categories: [news, code, analysis]\n",
+        "image: \"image.jpg\"\n",
+        "---\n",
+        "\n",
+        "\n",
+        "This is a post with executable code.\n"
+      ],
+      "id": "d4688f7d"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "1 + 1"
+      ],
+      "id": "a1537e69",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/home/kpatelis/mambaforge/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

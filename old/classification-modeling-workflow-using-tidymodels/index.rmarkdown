@@ -4,14 +4,19 @@ author: "Konstantinos Patelis"
 date: "2021-04-11"
 categories: [tidyverse, tidymodels, stacks, XGBoost]
 bibliography: references.bib
+execute:
+  freeze: true
+  cache: true # never re-render during project render
 #image: "image.jpg"
 ---
+
 
 A while back, I was working through the final assignment in the Practical Machine Learning Coursera course (part of the [JHU Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science)), which entailed creating a model to predict the way people perform a weight-lifting exercise using data from accelerometers on the belt, forearm, arm, and dumbell of each participant. I thought this was a good opportunity to practice using the [`tidymodels`](https://www.tidymodels.org/) family of packages to tackle this classification problem. So, in this post we will go through the series of steps to create our predictive model. We will cover defining the data pre-processing, specifying the model(s) to fit and using cross-validation to tune model hyperparameters. Additionally, we'll have a look at one of the recent additions to the `tidymodels` packages, `stacks` to create an ensemble model out of our base models. We'll see that most of our models perform almost equally well and an ensemble model is not required for achieving improved accuracy, and is presented mostly because this was a good opportunity to try it out. This blog post documents the approach taken to model this dataset.
 
 ### Data
 
 We'll use the Weight Lifting Exercises data set [@velloso2013], provided as part of the Human Activity Recognition project. The data available to us is split in two parts, one is the training set, which contains the `classe` variable which we want to train our model to predict, and the quiz set, that contains 20 observations for which we needed to predict `classe` as part of the course assignment. For this blog post we'll focus on the first data set, which we will split in two parts, one used for actually training the model and one to assess its accuracy.
+
 
 ```{r libraries_and_data, echo=TRUE, warning=FALSE}
 
@@ -218,9 +223,11 @@ initial_data <- read_data("https://d396qusza40orc.cloudfront.net/predmachlearn/p
                           
 ```
 
+
 ## EDA
 
 Let's split the initial data a training set and an test set (80/20 split). For the exploratory analysis and subsequent modeling, hyperparameter tuning and model evaluation I will use the training data set. Then the model will be used on the test data to predict out-of-sample accuracy.
+
 
 ```{r}
 
@@ -235,7 +242,9 @@ skim(train)
 
 ```
 
+
 It seems like the majority of the variables are numeric, but one important thing to note is that there is a high percentage of missing observations for a subset of the variables. From the completion rate, it seems that the missing values across the different attributes occur for the same observations. Since the majority of observations have missing values for these variables, it is unlikely that we could impute them. When viewing the data in spreadsheet applications these variables have a mix of being coded as NA or being simply blank, while even for observations where values are available, there are instances of a value showing as `#DIV/0`.
+
 
 ```{r}
 
@@ -243,7 +252,9 @@ eda <- train %>% select(where(~ !any(is.na(.))))
 
 ```
 
+
 One important thing in classification problems is to investigate whether there is imbalance between the different classes in our training data. For example, if a class is over-represented in the data then our classifier might tend to over-predict that class. Let's check how many times each class appears in the data.
+
 
 ```{r classe}
 
@@ -253,9 +264,11 @@ ggplot(eda, aes(classe, fill = classe)) +
 
 ```
 
+
 Looking at the above, there does not seem to be severe imbalance among classes. The first class, A is represented more compared to the other ones, but it's not to an overwhelming extent.
 
 Considering the other columns in our data, user name cannot be part of our predictors because it cannot generalize to other data if our model was used on data that is not part of this study. Looking at the timestamp, each subject was fully measured at a different point in the day, with each exercise happening back-to-back. From Velloso et al. (2013) [@velloso2013], we know that all subjects were observed in the presence of a professional trainer to observe that the exercise was done according to specification each time. I will not consider the timestamps or any features derived from them (e.g. using the time of day) as a predictor in our models.
+
 
 ```{r}
 
@@ -269,6 +282,7 @@ eda %>%
 
 ```
 
+
 <aside>You can highlight a circle to see the values for which that correlation was calculated, since it's not easy to make it out from the axes.</aside>
 
 Even excluding the columns mentioned above, there are a lot of features and presenting more information on EDA here would get too extensive. Since the purpose here is to demonstrate the modeling process with `tidymodels`, we will not be performing a more extensive EDA. For quick data exploration, you can use `DataExplorer::create_report(eda)` and `explore::explore(eda)` (after installing the two packages) to get a full data report on the data set from the former and a shiny app for interactive exploration from the latter.
@@ -280,6 +294,7 @@ In this section we will define the recipe to pre-process the data, specify the m
 ### Pre-processing Recipe
 
 I will use the `recipes` package to provide a specification of all the transformations to the data set before I fit any models, which will ensure that the same transformations are applied to the training, test and quiz data in the same way. Furthermore, it helps avoid information leakage as the transformations will be applied to all data sets using the statistics calculated for the training data. Specifically, I will remove all variables with missing values as well as other attributes discussed above, perform a transformation to try to make all predictors more symmetric (which is useful for models that benefit from predictors with distributions close to the Gaussian), normalize all variables (particularly important for the KNN and glmnet models) and then removing any predictors, if any, with very small variance. Note that we could define different pre-processing steps if required by the various models we will be tuning.
+
 
 ```{r recipe}
 
@@ -304,6 +319,7 @@ model_recipe <- recipe(classe ~ ., data = train) %>%
 
 ```
 
+
 ### Model Specification
 
 In this section I will use the `parsnip` package to create model specifications and set which model parameters will need to be tuned to ensure higher model performance. I will be trying four different models:
@@ -317,6 +333,7 @@ In this section I will use the `parsnip` package to create model specifications 
 4.  Boosted Trees (boost) - where we tune the number of trees, the learning rate, tree depth, number of predictors at each node split and the minimum number of data points in a node.
 
 I will then use the `workflows` package to combine the model recipe and the model specifications into different workflows. With `parsnip` we can create the specification in a similar manner across models and specify "computational engines" - practically R functions/packages that implement the calculations.
+
 
 ```{r mode_specification}
 
@@ -385,9 +402,11 @@ boost_wf <- workflow() %>%
 
 ```
 
+
 ### Model Tuning
 
 Let us tune the different model parameters using 10-fold cross-validation. To create the grid with the combinations of parameters we can use a space-filling design with 30 points, based on which 30 combinations of the parameters will be picked such that they cover the most area in the design space. The `dials` package contains sensible default ranges for the most common hyperparameters that are tuned in models. The user can modify those if required, and for some, the default range depends on the number of features. One such example is the `mtry` parameter in random forests and boosted trees algorithms, whose max value is equal to the number of predictors in the processed data set. If the number of predictors is known, we can use the `finalize` function to assign the range for `mtry`. This would not be possible if our model recipe contained steps that tune the final number of predictors (e.g. pre-processing with PCA and tuning the number of components to keep).
+
 
 ```{r model_parameters}
 
@@ -404,9 +423,11 @@ rf_param %>% extract_parameter_dials("mtry") # This was updated in December of 2
 
 ```
 
+
 When tuning a model, it is always important to consider what we are trying to optimize the model (e.g. achieve highest possible accuracy, maximize true positives, etc). For our problem, the aim is to accurately predict the class of each observation, so at the end of the tuning process we will pick the hyperparameters that achieve highest accuracy. When tuning classification models with the `tune` package, by default the accuracy and area under the ROC curve are calculated for each fold. We can specify other metrics from the `yardstick` package to calculate while tuning by specifying the `metrics` parameter e.g. in `tune_grid`. Note that if the metrics specified perform hard class predictions (if we selected accuracy as our sole metric), then classification probabilities are not created. Since these are required for our ensemble model in a later section, we'll also calculate the area under the curve to get the probabilities.
 
-```{r model_tuning, eval=FALSE}
+
+```{r model_tuning}
 
 # Split the train set into folds
 
@@ -489,37 +510,47 @@ stopCluster(cl)
 
 ```
 
+
 ### In-sample Accuracy
 
 One can use the `collect_metrics()` function to each of these to visualize the average accuracy for each combination of parameters (averaging across resamples), and see the various hyperparameters that achieve such accuracy.
 
-```{r plot_hyperparameters_rf, eval=FALSE}
+
+```{r plot_hyperparameters_rf}
 autoplot(rf_tune, metric = "accuracy")
 ```
 
+
 We can see that for the random forests model a combination of around 15-20 predictors and a minimal node size in the range between 5-15 seem to be optimal.
 
-```{r plot_hyperparameters_knn, eval=FALSE}
+
+```{r plot_hyperparameters_knn}
 autoplot(knn_tune, metric = "accuracy")
 ```
 
+
 For K-NN, a small number of neighbours is preferred, while Minkowski Distance of order 0.25 seems to perform best.
 
-```{r plot_hyperparameters_lm, eval=FALSE}
+
+```{r plot_hyperparameters_lm}
 autoplot(lasso_tune, metric = "accuracy")
 ```
 
+
 Small penalty is preferred for the LASSO model and it seems that up to a point, similar accuracy levels are achieved.
 
-```{r plot_hyperparameters_boost, eval=FALSE}
+
+```{r plot_hyperparameters_boost}
 autoplot(boost_tune, metric = "accuracy")
 ```
+
 
 For boosted trees, it seems that a higher learning rate is better. Higher tree depth (especially in the range of 9-14) seems to provide best results, while the number of trees and the minimal node size seem to have a wide range of values for which we achieve increased accuracy.
 
 Let us select the best models from each type of model and compare in-sample accuracy.
 
-```{r best_models, eval=FALSE}
+
+```{r best_models}
 
 best_resamples <- 
   bind_rows(
@@ -535,13 +566,15 @@ best_resamples %>%
 
 ```
 
+
 We can see that the random forests, K-NN, and boosted trees models perform exceptionally on the resamples of the train data, while even the best lasso logistic regression model performs much worse than the other three. However, there is high chance that our models have overfit on the training data and actually will not perform as well when generalizing to new data. This is where out-of-sample data comes to play, as we will use the portion of the data we set aside at the beginning to calculate accuracy on new data.
 
 ### Out-of-sample Accuracy
 
 Now that we have a set of hyperparameters that optimize performance for each model, we can update our workflows, fit them on the entirety of the training set and perform predictions on the test set. Since the test set is part of our initial data set that we set aside, the classe variable is known and thus we can calculate accuracy. The LASSO logistic regression model probably will not be useful for prediction but for completeness I will calculate test set accuracy for all models.
 
-```{r out_of_sample, eval = FALSE}
+
+```{r out_of_sample}
 
 # Final Random Forests Workflow
 
@@ -578,7 +611,7 @@ boost_final_fit <- last_fit(boost_wf_final, split)
 
 ```
 
-```{r best_oos, eval=FALSE}
+```{r best_oos}
 
 best_oos <- bind_rows(
                       rf_final_fit %>% mutate(model = "Random Forest"), 
@@ -595,13 +628,15 @@ best_oos %>% knitr::kable()
 
 ```
 
+
 We can see that the boosted trees and k nearest neighbours models perform great, with random forest trailing slightly behind. The LASSO logistic regression model has much lower performance and would not be preferred. At this point we could walk away with a model that has a 99.8% accuracy on unseen data. However, we can take it a couple of steps further to see if we can achieve even greater accuracy, as we'll see in the next sections.
 
 ### Ensemble Model
 
 In the previous section we used the `tune` package to try out different hyperparameter combinations over our data and estimate model accuracy using cross-validation. Let's assume we haven't yet tested the best model on our test data as we're only supposed to use the test set for final selection and we shouldn't be using the knowledge from applying to test data to improve performance. We can use the objects that were created with `tune_grid` to add the different model definitions to the model stack. Remember when we specified in the arguments that we save the predictions and workflows? This is because this information is required for this step, to combine the different models. Furthermore, the reason why we kept `roc_auc` as a metric while tuning is because it creates soft predictions, which are required in classification problems to create the stack. Since the outputs of these models will be highly correlated, the `blend_predictions` function performs regularization to decide which outputs will be used in the final prediction.
 
-```{r create_stack, eval=FALSE}
+
+```{r create_stack}
 
 # cl <- makePSOCKcluster(5)
 # registerDoParallel(cl)
@@ -627,7 +662,7 @@ stack_pred_test <- test %>%
 
 ```
 
-```{r stack_accuracy, eval=FALSE}
+```{r stack_accuracy}
 
 # stack_pred_train %>% accuracy(factor(classe), .pred_class)
 stack_pred_test %>% 
@@ -637,17 +672,21 @@ stack_pred_test %>%
 
 ```
 
+
 We see that in the end we achieved the same accuracy as our best model, which is not unexpected considering our accuracy was almost perfect. We can also have a look at the weights of the different models used in the ensemble.
 
-```{r stack_plot, eval=FALSE}
+
+```{r stack_plot}
 
 autoplot(model_stack_fit, type = "weights") %>% 
   ggplotly()
 
 ```
 
+
 <aside>We can see our ensemble assigned high weights to boost_tree models, you'll need to zoom in to see the weights for other models.</aside>
 
 While there was not much room for improvement, as mentioned in the beginning, this was a good opportunity to play around with the new package in practice.
 
 Although this data set did not present much of a challenge in terms of predicting the outcome, we managed to cover many of the different steps in the modeling process using `tidymodels`. Further steps one could take in their analyses could potentially involve using functionality from the `tidyposterior` package to make statistical comparisons between the models we constructed that performed similarly. Finally, the `tidymodels` ecosystem of packages is constantly growing and as an example, parts of this process could be further simplified/combined using the new [`workflowsets`](https://github.com/tidymodels/workflowsets) package which became available on CRAN while I was working on this post.
+

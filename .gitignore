@@ -49,3 +49,13 @@ po/*~
 rsconnect/
 
 /.quarto/
+
+# Quarto project files
+.quarto.project/
+
+# Local Quarto cache and render files
+.quarto/*
+
+# Virtual environment folder
+.venv/*
+
