@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 84978100-8670-4c87-9bd7-b0504beb1274
+      url: https://silver-tulumba-34ca65.netlify.app

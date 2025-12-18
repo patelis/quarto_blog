@@ -1,1 +1,1 @@
-Sitemap: https://www.kpatelis.com/sitemap.xml
+Sitemap: https://silver-tulumba-34ca65.netlify.app/sitemap.xml
