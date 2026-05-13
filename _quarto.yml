@@ -6,6 +6,10 @@ project:
 website:
   title: "Konstantinos Patelis"
   site-url: "https://www.kpatelis.com/"
+  description: "Personal site of Konstantinos Patelis — a quantitative analyst writing about machine learning, GenAI, and data products in finance."
+  search:
+    location: navbar
+    type: overlay
   navbar:
     right:
       - text: "Home"

@@ -1,10 +1,27 @@
 # options specified here will apply to all posts in this folder
 execute:
   freeze: true
-  cache: true # never re-render during project render
-# freeze computational output
-# (see https://quarto.org/docs/projects/code-execution.html#freeze)
-freeze: true
+  cache: true
 
-# Enable banner style title blocks
 title-block-banner: false
+
+# Reading experience
+toc: true
+toc-location: right
+toc-depth: 3
+reading-time: true
+code-tools: true
+
+# Comments — giscus (GitHub Discussions backend).
+comments:
+  giscus:
+    repo: "patelis/quarto_blog"
+    repo-id: "R_kgDOJ7S_Jg"
+    category: "Q&A"
+    category-id: "DIC_kwDOJ7S_Js4C85jl"
+    mapping: "pathname"
+    reactions-enabled: true
+    input-position: "top"
+    loading: "lazy"
+    theme: "preferred_color_scheme"
+    language: "en"

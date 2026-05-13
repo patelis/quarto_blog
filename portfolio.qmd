@@ -1,5 +1,6 @@
 ---
 title: "Portfolio"
+description: "Projects and applied write-ups across data science, ML, and GenAI."
 listing:
   contents: projects
   type: grid

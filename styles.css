@@ -203,20 +203,28 @@ body.quarto-dark .list-group-item {
   border-radius: 6px;
 }
 
-/* --- Code Blocks (VS Code Style) --- */
+/* --- Code Blocks --- */
+/* Light theme default (GitHub-light-ish on the cosmo neutral) */
 div.sourceCode {
-  background-color: #1e1e1e !important;
-  /* VS Code Dark Grey */
-  color: #d4d4d4;
+  background-color: var(--code-bg);
+  color: #24292f;
   border-radius: 12px;
   padding: 1.5rem 1rem 1rem 1rem;
   position: relative;
   margin-bottom: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--quarto-border);
 }
 
-/* Traffic Lights */
+/* Dark theme override (VS Code style) */
+body.quarto-dark div.sourceCode {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Traffic Lights — read fine on both backgrounds */
 div.sourceCode::before {
   content: "";
   position: absolute;
@@ -229,14 +237,18 @@ div.sourceCode::before {
   box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
 }
 
-/* Scrollbar */
+/* Scrollbar — theme-aware */
 div.sourceCode pre::-webkit-scrollbar {
   height: 8px;
 }
 
 div.sourceCode pre::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+body.quarto-dark div.sourceCode pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 code {
