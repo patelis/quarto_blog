@@ -31,4 +31,4 @@ verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/Konstantino
 
 ## Issued
 
-Microsoft — 2026-03-27  <!-- FILL IN: match the date set in the frontmatter -->
+Microsoft — 2026-03-27
