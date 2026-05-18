@@ -1,0 +1,32 @@
+---
+title: "Microsoft Certified: Azure AI Fundamentals (AI-900)"
+issuer: "Microsoft"
+date: "2025-10-23"
+image: "badge.svg"
+categories: [cloud, azure, ai, fundamentals]
+skills:
+  - "AI Workloads"
+  - "Responsible AI"
+  - "Machine Learning"
+  - "Computer Vision"
+  - "NLP"
+  - "Generative AI"
+  - "Azure OpenAI"
+  - "Azure AI Services"
+pdf: "/documents/azure-ai-fundamentals_900.pdf"
+verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/8275C0878DDB0131?sharingId=7B60741AD788454F"
+---
+
+[Download certificate (PDF)](/documents/azure-ai-fundamentals.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/8275C0878DDB0131?sharingId=7B60741AD788454F)
+
+## Skills covered
+
+-   Describing **AI workloads and considerations** — including responsible AI principles
+-   Describing fundamental principles of **machine learning** on Azure (training, evaluation, deployment models)
+-   Describing **computer vision** workloads on Azure (Azure AI Vision, Custom Vision, Face, OCR)
+-   Describing **natural language processing** workloads on Azure (Azure AI Language, translation, speech)
+-   Describing **generative AI** workloads on Azure — Azure OpenAI, prompt patterns, copilots, content safety
+
+## Issued
+
+Microsoft — 2025-10-23

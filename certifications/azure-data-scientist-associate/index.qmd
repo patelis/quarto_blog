@@ -1,0 +1,36 @@
+---
+title: "Microsoft Certified: Azure Data Scientist Associate (DP-100)"
+issuer: "Microsoft"
+date: "2025-12-04"
+image: "badge.svg"
+categories: [cloud, azure, ml]
+skills:
+  - "Azure Machine Learning"
+  - "Python"
+  - "scikit-learn"
+  - "MLflow"
+  - "ML Pipelines"
+  - "Feature Engineering"
+  - "Model Deployment"
+  - "Model Monitoring"
+  - "Responsible AI"
+pdf: "/documents/azure-data-scientist-associate.pdf"
+verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/2E2088B222FF547A?sharingId=7B60741AD788454F"
+---
+
+[Download certificate (PDF)](/documents/azure-data-scientist-associate.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/2E2088B222FF547A?sharingId=7B60741AD788454F)
+
+## Skills covered
+
+-   Designing and creating a working environment for data science workloads on **Azure Machine Learning**
+-   Exploring data and engineering features for ML
+-   Training, tuning, and selecting models with **Python**, **scikit-learn**, and Azure ML SDK / CLI v2
+-   Building **ML pipelines** and orchestrating jobs end-to-end
+-   Tracking experiments with **MLflow** and the Azure ML tracking server
+-   Deploying models to managed endpoints (real-time and batch) and consuming them from production
+-   Monitoring models for performance and drift in production
+-   Applying **Responsible AI** practices (fairness, explainability, error analysis)
+
+## Issued
+
+Microsoft — 2025-12-04

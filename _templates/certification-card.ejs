@@ -1,0 +1,36 @@
+<div class="quarto-grid-item card h-100">
+  <% if (item.image) { %>
+    <a href="<%= item.path %>" class="no-external">
+      <img src="<%= item.image %>" class="thumbnail-image card-img-top certification-badge" alt="<%= item.title %> badge" />
+    </a>
+  <% } %>
+  <div class="card-body post-contents">
+    <h5 class="card-title listing-title">
+      <a href="<%= item.path %>" class="no-external"><%= item.title %></a>
+    </h5>
+
+    <% if (item.issuer) { %>
+      <div class="card-text listing-subtitle certification-issuer"><%= item.issuer %></div>
+    <% } %>
+
+    <% if (item.date) { %>
+      <div class="card-text listing-date"><%= item.date %></div>
+    <% } %>
+
+    <% if (item.skills && item.skills.length) { %>
+      <div class="certification-skills" aria-label="Skills covered">
+        <% item.skills.forEach(function(s) { %>
+          <span class="skill-chip"><%= s %></span>
+        <% }); %>
+      </div>
+    <% } %>
+
+    <% if (item.categories) { %>
+      <div class="listing-categories">
+        <% item.categories.forEach(function(c) { %>
+          <div class="listing-category" onclick="window.quartoListingCategory('<%= c %>'); return false;"><%= c %></div>
+        <% }); %>
+      </div>
+    <% } %>
+  </div>
+</div>

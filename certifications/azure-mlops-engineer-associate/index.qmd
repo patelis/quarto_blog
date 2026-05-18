@@ -1,0 +1,37 @@
+---
+title: "Microsoft Certified: Machine Learning Operations (MLOps) Engineer Associate (AI-300)"
+issuer: "Microsoft"
+date: "2025-05-13"
+image: "badge.svg"
+categories: [cloud, azure, ml, mlops, llmops, aiops]
+skills:
+  - "Azure Machine Learning"
+  - "MLOps"
+  - "GenAIOps"
+  - "Azure AI Foundry"
+  - "CI/CD for ML"
+  - "Model Lifecycle"
+  - "Model Monitoring"
+  - "Drift Detection"
+  - "LLM Observability"
+  - "Azure DevOps"
+  - "GitHub Actions"
+pdf: "/documents/azure-mlops-engineer-associate.pdf"
+verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/3BC4736B13A5DB5C?sharingId=7B60741AD788454F"
+---
+
+[Download certificate (PDF)](/documents/azure-mlops-engineer-associate.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/3BC4736B13A5DB5C?sharingId=7B60741AD788454F)
+
+## Skills covered
+
+-   **Design and implement an MLOps infrastructure** on Azure — workspaces, compute, source control, secrets
+-   **Implement machine learning model lifecycle and operations** — training pipelines, registries, versioning, CI/CD
+-   **Design and implement a GenAIOps infrastructure** — **Azure AI Foundry**, prompt flow, retrieval-augmented orchestration
+-   **Implement generative AI quality assurance and observability** — evaluations, guardrails, content safety, tracing
+-   **Optimize generative AI systems and model performance** — cost, latency, prompt tuning, model selection
+-   Practical use of **Azure DevOps** / **GitHub Actions** for automated training and deployment workflows
+-   Production **model monitoring** and **drift detection** for both classical ML and LLM endpoints
+
+## Issued
+
+Microsoft — 2025-05-13

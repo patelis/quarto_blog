@@ -1,0 +1,44 @@
+---
+title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
+issuer: "Microsoft"
+date: "2025-07-01"
+image: "badge.svg"
+categories: [microsoft, data, analytics, power-bi]
+skills:
+  - "Power BI Desktop"
+  - "Power Query (M)"
+  - "DAX"
+  - "Data Modeling"
+  - "Star Schema"
+  - "Data Visualisation"
+  - "Row-Level Security"
+  - "Power BI Service"
+  - "Workspaces"
+  - "Dataset Refresh"
+pdf: "/documents/power-bi-data-analyst-associate.pdf"
+verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/E60C5E51792BB0C5?sharingId=7B60741AD788454F"
+---
+
+```{=html}
+<!-- FILL IN BEFORE PUBLISHING:
+  1. Update `date:` in the frontmatter to the date your PL-300 was issued
+  2. Replace REPLACE_ME in `verify-url:` and in the [Verify](…) link below
+  3. Drop the badge image at  certifications/power-bi-data-analyst-associate/badge.png
+  4. Drop the certificate PDF at documents/power-bi-data-analyst-associate.pdf
+  5. Update the "Issued" date at the bottom of this page
+-->
+```
+
+[Download certificate (PDF)](/documents/power-bi-data-analyst-associate.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/E60C5E51792BB0C5?sharingId=7B60741AD788454F)
+
+## Skills covered
+
+-   **Prepare the data** — connecting to sources, profiling, cleaning, and shaping with **Power Query** (M)
+-   **Model the data** — designing **star-schema** models, relationships, hierarchies, and writing measures and calculated columns with **DAX**
+-   **Visualize and analyze the data** — building reports and dashboards, formatting visuals, applying conditional formatting, interactivity, and bookmarks
+-   **Manage and secure Power BI** — workspaces, app deployment, dataset refresh scheduling, **row-level security** (RLS), and sensitivity labels
+-   Delivering actionable, self-service analytics for business stakeholders
+
+## Issued
+
+Microsoft — 2025-07-01

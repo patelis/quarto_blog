@@ -1,0 +1,13 @@
+---
+title: "Certifications"
+description: "Professional certifications, the skills they cover, and downloadable proof."
+listing:
+  contents: "certifications/*/index.qmd"
+  type: grid
+  sort: "date desc"
+  categories: true
+  template: _templates/certification-card.ejs
+  fields: [image, title, issuer, date, categories, skills, pdf]
+page-layout: full
+title-block-banner: false
+---

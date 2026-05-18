@@ -1,0 +1,8 @@
+# options specified here will apply to all certifications in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: true
+
+# No banner-style title block on individual cert pages
+title-block-banner: false

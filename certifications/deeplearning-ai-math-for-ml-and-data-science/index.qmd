@@ -1,0 +1,35 @@
+---
+title: "Mathematics for Machine Learning and Data Science Specialization"
+issuer: "DeepLearning.AI"
+date: "2025-01-07"
+image: "badge.png"
+categories: [ml, math, course]
+skills:
+  - "Linear Algebra"
+  - "Vectors & Matrices"
+  - "Eigenvalues / Eigenvectors"
+  - "Calculus"
+  - "Gradient Descent"
+  - "Probability"
+  - "Statistics"
+  - "Hypothesis Testing"
+  - "Bayes' Theorem"
+  - "NumPy"
+pdf: "/documents/deeplearning-ai-math-for-ml-and-data-science.pdf"
+verify-url: "https://www.coursera.org/account/accomplishments/specialization/certificate/36QS18ODNUHT"
+---
+
+[Download certificate (PDF)](/documents/deeplearning-ai-math-for-ml-and-data-science.pdf){.btn .btn-primary} [Verify](https://www.coursera.org/account/accomplishments/specialization/certificate/36QS18ODNUHT)
+
+## Skills covered
+
+A 3-course specialization from **DeepLearning.AI**, taught by Luis Serrano. Builds the mathematical toolkit that the rest of the DeepLearning.AI catalogue assumes.
+
+-   **Course 1 — Linear Algebra for Machine Learning and Data Science**: systems of linear equations, vector spaces, matrix operations, determinants, **eigenvalues** and **eigenvectors**, applications to ML such as PCA intuition
+-   **Course 2 — Calculus for Machine Learning and Data Science**: derivatives in one and many variables, partial derivatives, the chain rule, **gradient descent** (and its variants) as the optimization backbone of ML
+-   **Course 3 — Probability & Statistics for Machine Learning and Data Science**: probability distributions, joint and conditional distributions, **Bayes' theorem**, sampling, descriptive and inferential statistics, **hypothesis testing**, p-values, confidence intervals
+-   Hands-on labs throughout in **Python** / **NumPy** tying each concept back to ML use cases
+
+## Issued
+
+DeepLearning.AI — 2025-01-07

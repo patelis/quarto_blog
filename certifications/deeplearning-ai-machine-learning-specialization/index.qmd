@@ -1,0 +1,37 @@
+---
+title: "Machine Learning Specialization"
+issuer: "DeepLearning.AI · Stanford Online"
+date: "2022-09-19"
+image: "badge.png"
+categories: [ml, scikit-learn, regression, classification, clustering]
+skills:
+  - "Linear Regression"
+  - "Logistic Regression"
+  - "Neural Networks"
+  - "Decision Trees"
+  - "XGBoost"
+  - "Unsupervised Learning"
+  - "Clustering"
+  - "Anomaly Detection"
+  - "Recommender Systems"
+  - "Reinforcement Learning"
+  - "TensorFlow"
+  - "scikit-learn"
+  - "NumPy"
+pdf: "/documents/deeplearning-ai-machine-learning-specialization.pdf"
+verify-url: "https://www.coursera.org/account/accomplishments/specialization/certificate/L3UVX6D495SS"
+---
+
+[Download certificate (PDF)](/documents/deeplearning-ai-machine-learning-specialization.pdf){.btn .btn-primary} [Verify](https://www.coursera.org/account/accomplishments/specialization/certificate/L3UVX6D495SS)
+
+## Skills covered
+
+A 3-course specialization from **DeepLearning.AI** and **Stanford Online**, taught by Andrew Ng. The updated successor to Ng's original 2012 ML course on Coursera.
+
+-   **Course 1 — Supervised Machine Learning**: linear regression, logistic regression, gradient descent, regularization; building models with **NumPy** and **scikit-learn**
+-   **Course 2 — Advanced Learning Algorithms**: neural networks with **TensorFlow** (multi-class classification), best practices for ML development, decision trees, random forests, **XGBoost**
+-   **Course 3 — Unsupervised Learning, Recommenders, Reinforcement Learning**: clustering, anomaly detection, collaborative filtering and content-based recommenders, and a deep reinforcement learning project
+
+## Issued
+
+DeepLearning.AI · Stanford Online — 2022-09-19

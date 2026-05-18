@@ -254,3 +254,43 @@ body.quarto-dark div.sourceCode pre::-webkit-scrollbar-thumb {
 code {
   font-family: 'Fira Code', monospace;
 }
+
+/* --- Certifications --- */
+/* Custom listing template lives at _templates/certification-card.ejs */
+.certification-badge {
+  height: 200px;
+  object-fit: contain;
+  padding: 0.75rem;
+  background: transparent;
+  border-bottom: 1px solid var(--quarto-border);
+}
+
+.certification-issuer {
+  font-weight: 600;
+  opacity: 0.85;
+  margin-bottom: 0.25rem;
+}
+
+.certification-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.skill-chip {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: var(--code-bg);
+  color: var(--quarto-text);
+  border: 1px solid var(--quarto-border);
+  white-space: nowrap;
+}
+
+body.quarto-dark .skill-chip {
+  background: #2d2d2d;
+  border-color: rgba(255, 255, 255, 0.12);
+}

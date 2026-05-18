@@ -1,0 +1,34 @@
+---
+title: "Microsoft Certified: Azure AI Engineer Associate (AI-102)"
+issuer: "Microsoft"
+date: "2026-03-27"
+image: "badge.svg"
+categories: [cloud, azure, ai, ml]
+skills:
+  - "Azure OpenAI"
+  - "Azure AI Foundry"
+  - "Azure AI Search"
+  - "Computer Vision"
+  - "NLP"
+  - "Document Intelligence"
+  - "Speech Services"
+  - "Content Safety"
+pdf: "/documents/azure-ai-engineer-associate.pdf"
+verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/FDE4F4D0323C90CC?sharingId=7B60741AD788454F"
+---
+
+[Download certificate (PDF)](/documents/azure-ai-engineer-associate.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/FDE4F4D0323C90CC?sharingId=7B60741AD788454F)
+
+## Skills covered
+
+-   Designing and implementing **Azure OpenAI** solutions — prompt engineering, function calling, RAG patterns with **Azure AI Search**
+-   Building **computer vision** workflows — image analysis, OCR, and custom Vision models
+-   **Document Intelligence** for structured extraction from forms, invoices, and layouts
+-   **NLP** with Azure AI Language — entity recognition, summarisation, classification, sentiment
+-   **Speech** services — speech-to-text, text-to-speech, real-time translation
+-   **Content Safety** moderation across text, image, and multimodal inputs
+-   Provisioning, securing, monitoring, and operating Azure AI resources end-to-end
+
+## Issued
+
+Microsoft — 2026-03-27  <!-- FILL IN: match the date set in the frontmatter -->

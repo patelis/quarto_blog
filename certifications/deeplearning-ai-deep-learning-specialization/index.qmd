@@ -1,0 +1,39 @@
+---
+title: "Deep Learning Specialization"
+issuer: "DeepLearning.AI"
+date: "2022-11-13"
+image: "badge.png"
+categories: [ml, deep-learning, course, neural nets, cnn, resnet, rnn, gru, lstm, transformers]
+skills:
+  - "Neural Networks"
+  - "Backpropagation"
+  - "Regularization"
+  - "Hyperparameter Tuning"
+  - "CNNs"
+  - "ResNet"
+  - "Object Detection"
+  - "RNNs"
+  - "LSTMs"
+  - "GRUs"
+  - "Attention"
+  - "Sequence Models"
+  - "Transfer Learning"
+pdf: "/documents/deeplearning-ai-deep-learning-specialization.pdf"
+verify-url: "https://www.coursera.org/account/accomplishments/specialization/certificate/8T7J9YKFXU25"
+---
+
+[Download certificate (PDF)](/documents/deeplearning-ai-deep-learning-specialization.pdf){.btn .btn-primary} [Verify](https://www.coursera.org/account/accomplishments/specialization/certificate/8T7J9YKFXU25)
+
+## Skills covered
+
+A 5-course specialization from **DeepLearning.AI**, taught by Andrew Ng, Kian Katanforoosh, and Younes Bensouda Mourri.
+
+-   **Course 1 — Neural Networks and Deep Learning**: foundations of DL, vectorised forward/backward propagation, building NNs from scratch in **NumPy**
+-   **Course 2 — Improving Deep Neural Networks**: practical aspects — initialization, regularization (L2, dropout), batch normalization, optimization (mini-batch, momentum, Adam), hyperparameter tuning
+-   **Course 3 — Structuring Machine Learning Projects**: diagnosing errors, train/dev/test splits, **transfer learning**, multi-task learning, end-to-end vs pipeline approaches
+-   **Course 4 — Convolutional Neural Networks**: CNN building blocks, classic architectures (LeNet, AlexNet, **ResNet**, Inception), **object detection** (YOLO), face recognition, neural style transfer
+-   **Course 5 — Sequence Models**: **RNNs**, **LSTMs**, **GRUs**, language modelling, word embeddings, **attention** mechanisms, and the basics of Transformer architectures
+
+## Issued
+
+DeepLearning.AI — 2022-11-13 <!-- FILL IN: match the date set in the frontmatter -->
