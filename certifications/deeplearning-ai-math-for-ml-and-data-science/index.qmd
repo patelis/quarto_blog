@@ -2,7 +2,7 @@
 title: "Mathematics for Machine Learning and Data Science Specialization"
 issuer: "DeepLearning.AI"
 date: "2025-01-07"
-image: "badge.png"
+image: "badge.svg"
 categories: [ml, math, course]
 skills:
   - "Linear Algebra"

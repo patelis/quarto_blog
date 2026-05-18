@@ -2,7 +2,7 @@
 title: "Deep Learning Specialization"
 issuer: "DeepLearning.AI"
 date: "2022-11-13"
-image: "badge.png"
+image: "badge.svg"
 categories: [ml, deep-learning, course, neural nets, cnn, resnet, rnn, gru, lstm, transformers]
 skills:
   - "Neural Networks"
