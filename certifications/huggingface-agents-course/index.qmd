@@ -1,0 +1,31 @@
+---
+title: "Hugging Face AI Agents Course"
+issuer: "Hugging Face"
+date: "2025-10-25"
+image: "badge.png"
+categories: \[ai, ml, agents, course\]
+skills:
+ - "LLM Agents"
+ - "Tools / Actions / Observations"
+ - "smolagents"
+ - "LangGraph"
+ - "LlamaIndex"
+ - "Retrieval / RAG"
+ - "Function Calling"
+ - "Agent Evaluation"
+ - "Agent Fine-tuning"
+pdf: "/documents/huggingface-agents-course.pdf"
+---
+
+[Download certificate (PDF)](/documents/huggingface-agents-course.pdf){.btn .btn-primary}
+
+## Skills covered
+
+-   **Agent Fundamentals**: tools, thoughts, actions, observations, LLM special tokens, chat templates
+-   **Agent Frameworks**: building agents with **smolagents**, **LangGraph**, and **LlamaIndex**
+-   **Use Cases**: end-to-end agent applications including retrieval, code interpreters, and tool use over real data
+-   **Final Assignment**: develop, benchmark, and submit an agent to the public leaderboard (GAIA benchmark)
+
+## See also
+
+The capstone Unit 4 final challenge for this course produced [my GAIA Benchmark Agent](/projects/gaia-benchmark-agent/) — a multi-modal LangGraph agent built to tackle the GAIA reasoning benchmark.
