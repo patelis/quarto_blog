@@ -2,8 +2,8 @@
 title: "Hugging Face AI Agents Course"
 issuer: "Hugging Face"
 date: "2025-12-10"
-image: "badge.png"
-categories: [ai, ml, agents, course\]
+image: "badge.svg"
+categories: [ai, ml, agents, course]
 skills:
  - "LLM Agents"
  - "Tools / Actions / Observations"
