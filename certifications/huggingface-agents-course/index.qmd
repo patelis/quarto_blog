@@ -19,14 +19,13 @@ pdf: "/documents/huggingface-agents-course.pdf"
 
 [Download certificate (PDF)](/documents/huggingface-agents-course.pdf){.btn .btn-primary}
 
-> [!NOTE]
 > Course was completed in summer of 2025, but I fetched the certificate for HuggingFace a second time to attach here and it refreshed the date.
 
 ## Skills covered
 
 -   **Agent Fundamentals**: tools, thoughts, actions, observations, LLM special tokens, chat templates
 -   **Agent Frameworks**: building agents with **smolagents**, **LangGraph**, and **LlamaIndex**
--   **Use Cases**: end-to-end agent applications including retrieval, code interpreters, and tool use over real data
+-   **Use Cases**: end-to-end agent applications including retrieval (RAG), code interpreters, and tool use over real data
 -   **Final Assignment**: develop, benchmark, and submit an agent to the public leaderboard (GAIA benchmark)
 
 ## See also
