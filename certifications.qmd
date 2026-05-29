@@ -5,7 +5,7 @@ listing:
   contents: "certifications/*/index.qmd"
   type: grid
   sort: "date desc"
-  categories: true
+  categories: false
   template: _templates/certification-card.ejs
   fields: [image, title, issuer, date, categories, skills, pdf]
 page-layout: full
