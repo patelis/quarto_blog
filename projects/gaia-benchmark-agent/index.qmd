@@ -2,7 +2,7 @@
 title: "GAIA Benchmark Agent"
 author: "Konstantinos Patelis"
 date: "2026-05-18"
-categories: [agents, llm, langgraph, rag, tool-calling]
+categories: [Agents, LLM, LangGraph, RAG, Tool-Calling]
 image: "agent_graph_auto.png"
 description: "A LangGraph-orchestrated multi-modal agent built for the GAIA reasoning benchmark — hybrid retrieval, vision/audio tools, and a two-stage answer formatter."
 ---
