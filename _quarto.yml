@@ -4,11 +4,12 @@ project:
     - "documents/"
   render:
     - "*.qmd"
-    - "!old/"
 website:
   title: "Konstantinos Patelis"
   site-url: "https://www.kpatelis.com/"
   description: "Personal site of Konstantinos Patelis — a quantitative analyst writing about machine learning, GenAI, and data products in finance."
+  image: assets/profile.png
+  image-alt: "Headshot of Konstantinos Patelis"
   search:
     location: navbar
     type: overlay
@@ -26,7 +27,24 @@ website:
         href: https://github.com/patelis
       - icon: twitter
         href: https://twitter.com/k_patelis
-  twitter-card: true
+  open-graph: true
+  twitter-card:
+    creator: "@k_patelis"
+    site: "@k_patelis"
+    card-style: summary_large_image
+  page-footer:
+    left: "© 2026 Konstantinos Patelis"
+    center:
+      - icon: envelope-fill
+        href: "mailto:kpatelis@outlook.com"
+        aria-label: Email
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/kospatelis/"
+        aria-label: LinkedIn
+      - icon: github
+        href: "https://github.com/patelis"
+        aria-label: GitHub
+    right: "Built with [Quarto](https://quarto.org) · Hosted on [Netlify](https://www.netlify.com/) · [Source](https://github.com/patelis/quarto_blog)"
   favicon: "assets/favicon.png"
 format:
   html:
