@@ -182,14 +182,30 @@ body.quarto-dark .list-group-item {
 }
 
 .card-img-top {
-  height: 200px;
-  object-fit: cover;
+  height: 180px;
+  object-fit: contain;
+  padding: 0.75rem;
+  background: var(--code-bg);
   border-bottom: 1px solid var(--quarto-border);
+}
+
+body.quarto-dark .card-img-top {
+  background: #2d2d2d;
 }
 
 .card-title {
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+/* Clamp listing-card descriptions to 3 lines for consistent card heights */
+.card .card-text.description,
+.card .listing-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  overflow: hidden;
 }
 
 /* --- Blog Post List --- */
