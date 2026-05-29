@@ -35,10 +35,12 @@ In the Portfolio section, I'll be showcasing projects touching upon different ar
 
 When not at work or busy with other data-related projects, I enjoy watching movies and good animated shows, hiking, playing board games, and recently working on LEGO sets.
 
+::: {.my-focus}
 ### My Focus
 
 -   <i class="bi bi-bar-chart-fill"></i>   **Data Visualization** (D3.js, ggplot2)
 -   <i class="bi bi-cpu-fill"></i>   **Machine Learning** (PyTorch, Scikit-Learn)
 -   <i class="bi bi-globe"></i>   **Web Development** (Quarto, React)
+:::
 
 [Explore my Portfolio](portfolio.qmd){.btn .btn-primary role="button"}   [Get in touch](mailto:kpatelis@outlook.com){.btn .btn-outline-primary role="button"}

@@ -121,12 +121,60 @@ body.quarto-dark .list-group-item {
 }
 
 .quarto-about-trestles .about-image {
-  /* Removed border */
   border: none;
-  /* Ensure resizing is nice */
   width: 250px;
-  /* custom size */
   max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quarto-about-trestles .about-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+}
+
+body.quarto-dark .quarto-about-trestles .about-image {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+body.quarto-dark .quarto-about-trestles .about-image:hover {
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
+}
+
+/* --- "My Focus" card on home --- */
+.my-focus {
+  background: var(--code-bg);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 1rem 1.5rem 1.25rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.my-focus h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.my-focus ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.my-focus li {
+  margin-bottom: 0.4rem;
+}
+
+.my-focus li:last-child {
+  margin-bottom: 0;
+}
+
+.my-focus li i {
+  color: var(--primary-color);
+  margin-right: 0.4rem;
 }
 
 .quarto-about-trestles .about-contents {
@@ -296,17 +344,43 @@ code {
 
 .skill-chip {
   display: inline-block;
-  padding: 0.15rem 0.55rem;
+  padding: 0.22rem 0.7rem;
   border-radius: 999px;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 500;
   background: var(--code-bg);
   color: var(--quarto-text);
   border: 1px solid var(--quarto-border);
   white-space: nowrap;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.skill-chip:hover {
+  background: rgba(39, 128, 227, 0.08);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-1px);
 }
 
 body.quarto-dark .skill-chip {
   background: #2d2d2d;
   border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.quarto-dark .skill-chip:hover {
+  background: rgba(90, 170, 250, 0.12);
+  border-color: #5aaafa;
+  color: #5aaafa;
+}
+
+/* --- CTA buttons (home + project pages) --- */
+.btn-primary,
+.btn-outline-primary {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(39, 128, 227, 0.25);
 }
