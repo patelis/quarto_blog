@@ -4,7 +4,7 @@ description: "Foundational Azure AI — machine learning, computer vision, NLP, 
 issuer: "Microsoft"
 date: "2025-10-23"
 image: "badge.svg"
-categories: [cloud, azure, ai, fundamentals]
+categories: [Cloud, Azure, AI]
 skills:
   - "AI Workloads"
   - "Responsible AI"

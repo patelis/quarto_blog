@@ -4,7 +4,7 @@ description: "Power BI from data model to publish — Power Query ETL, DAX measu
 issuer: "Microsoft"
 date: "2025-07-01"
 image: "badge.svg"
-categories: [microsoft, data, analytics, power-bi]
+categories: [Microsoft, Data, Analytics, PowerBI]
 skills:
   - "Power BI Desktop"
   - "Power Query (M)"

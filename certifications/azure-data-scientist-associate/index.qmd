@@ -4,7 +4,7 @@ description: "End-to-end machine learning on Azure ML — building, tuning, and 
 issuer: "Microsoft"
 date: "2025-12-04"
 image: "badge.svg"
-categories: [cloud, azure, ml]
+categories: [Cloud, Azure, ML]
 skills:
   - "Azure Machine Learning"
   - "Python"

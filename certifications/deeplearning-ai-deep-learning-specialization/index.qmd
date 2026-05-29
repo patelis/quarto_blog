@@ -4,7 +4,7 @@ description: "Andrew Ng's five-course deep learning specialization — neural ne
 issuer: "DeepLearning.AI"
 date: "2022-11-13"
 image: "badge.svg"
-categories: [ml, deep-learning, course, neural nets, cnn, resnet, rnn, gru, lstm, transformers]
+categories: [ML, Deep Learning, Neural Nets, CNN, ResNet, RNN, GRU, LSTM, Transformers]
 skills:
   - "Neural Networks"
   - "Backpropagation"

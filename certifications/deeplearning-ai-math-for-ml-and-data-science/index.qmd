@@ -4,7 +4,7 @@ description: "Mathematical foundations for machine learning — linear algebra, 
 issuer: "DeepLearning.AI"
 date: "2025-01-07"
 image: "badge.svg"
-categories: [ml, math, course]
+categories: [ML, Math]
 skills:
   - "Linear Algebra"
   - "Vectors & Matrices"

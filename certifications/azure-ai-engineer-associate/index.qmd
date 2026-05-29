@@ -4,7 +4,7 @@ description: "Designing and shipping AI applications on Azure — OpenAI and AI 
 issuer: "Microsoft"
 date: "2026-03-27"
 image: "badge.svg"
-categories: [cloud, azure, ai, ml]
+categories: [Cloud, Azure, AI, ML]
 skills:
   - "Azure OpenAI"
   - "Azure AI Foundry"

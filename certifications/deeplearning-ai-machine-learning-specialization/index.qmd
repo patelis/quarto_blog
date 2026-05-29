@@ -4,7 +4,7 @@ description: "Foundational machine learning from Andrew Ng and Stanford Online â
 issuer: "DeepLearning.AI Â· Stanford Online"
 date: "2022-09-19"
 image: "badge.svg"
-categories: [ml, scikit-learn, regression, classification, clustering]
+categories: [ML, scikit-learn, Regression, Classification, Clustering]
 skills:
   - "Linear Regression"
   - "Logistic Regression"
