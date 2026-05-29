@@ -125,24 +125,13 @@ body.quarto-dark .list-group-item {
   width: 250px;
   max-width: 100%;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  }
 
 .quarto-about-trestles .about-image:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
 }
 
-body.quarto-dark .quarto-about-trestles .about-image {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-}
-
-body.quarto-dark .quarto-about-trestles .about-image:hover {
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
-}
-
-/* --- "My Focus" card on home --- */
 .my-focus {
   background: var(--code-bg);
   border-left: 4px solid var(--primary-color);
