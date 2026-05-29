@@ -1,5 +1,6 @@
 ---
 title: "Machine Learning Specialization"
+description: "Foundational machine learning from Andrew Ng and Stanford Online — regression, neural networks, decision trees, XGBoost, and unsupervised methods."
 issuer: "DeepLearning.AI · Stanford Online"
 date: "2022-09-19"
 image: "badge.svg"

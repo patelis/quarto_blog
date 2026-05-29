@@ -1,9 +1,12 @@
 ---
 title: "Classification modeling workflow using tidymodels"
+description: "Building a classification pipeline on the Weight Lifting Exercises dataset with tidymodels — workflowsets for cross-validated tuning across four candidate models, plus a stacks ensemble."
 author: "Konstantinos Patelis"
 date: "2021-04-11"
 date-modified: "2026-05-12"
 categories: [tidyverse, tidymodels, stacks, XGBoost]
+image: index_files/figure-html/plot_hyperparameters_boost-1.png
+image-alt: "Grid of accuracy curves across XGBoost hyperparameters from a tidymodels workflowsets tuning run."
 bibliography: references.bib
 ---
 

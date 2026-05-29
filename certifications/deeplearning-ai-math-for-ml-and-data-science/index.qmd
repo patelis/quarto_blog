@@ -1,5 +1,6 @@
 ---
 title: "Mathematics for Machine Learning and Data Science Specialization"
+description: "Mathematical foundations for machine learning — linear algebra, multivariable calculus and gradient descent, probability, and inferential statistics."
 issuer: "DeepLearning.AI"
 date: "2025-01-07"
 image: "badge.svg"

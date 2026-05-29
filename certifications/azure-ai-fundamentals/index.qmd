@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Certified: Azure AI Fundamentals (AI-900)"
+description: "Foundational Azure AI — machine learning, computer vision, NLP, generative AI, and responsible AI across the Azure AI Services portfolio."
 issuer: "Microsoft"
 date: "2025-10-23"
 image: "badge.svg"

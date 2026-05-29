@@ -1,7 +1,11 @@
 ---
 title: "Konstantinos Patelis"
+description: "Quantitative analyst in Zurich, working in stress testing and building AI solutions at UBS."
 image: assets/profile.png
+image-alt: "Headshot of Konstantinos Patelis"
 page-layout: full
+include-in-header:
+  - _includes/json-ld-person.html
 about:
   template: trestles
   links:
@@ -33,8 +37,8 @@ When not at work or busy with other data-related projects, I enjoy watching movi
 
 ### My Focus
 
-- <i class="bi bi-bar-chart-fill"></i> &nbsp; **Data Visualization** (D3.js, ggplot2)
-- <i class="bi bi-cpu-fill"></i> &nbsp; **Machine Learning** (PyTorch, Scikit-Learn)
-- <i class="bi bi-globe"></i> &nbsp; **Web Development** (Quarto, React)
+-   <i class="bi bi-bar-chart-fill"></i>   **Data Visualization** (D3.js, ggplot2)
+-   <i class="bi bi-cpu-fill"></i>   **Machine Learning** (PyTorch, Scikit-Learn)
+-   <i class="bi bi-globe"></i>   **Web Development** (Quarto, React)
 
-[Explore my Portfolio](portfolio.qmd){.btn .btn-outline-primary role="button"}
+[Explore my Portfolio](portfolio.qmd){.btn .btn-primary role="button"}   [Get in touch](mailto:kpatelis@outlook.com){.btn .btn-outline-primary role="button"}

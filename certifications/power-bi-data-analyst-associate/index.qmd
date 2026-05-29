@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
+description: "Power BI from data model to publish — Power Query ETL, DAX measures over star schemas, and row-level security in the Power BI Service."
 issuer: "Microsoft"
 date: "2025-07-01"
 image: "badge.svg"

@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Certified: Machine Learning Operations (MLOps) Engineer Associate (AI-300)"
+description: "MLOps and GenAIOps on Azure — CI/CD for ML, model lifecycle automation, and drift monitoring across Azure ML and AI Foundry."
 issuer: "Microsoft"
 date: "2025-05-13"
 image: "badge.svg"

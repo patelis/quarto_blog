@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Certified: Azure AI Engineer Associate (AI-102)"
+description: "Designing and shipping AI applications on Azure — OpenAI and AI Foundry, AI Search, and the Vision/Speech/NLP/Document Intelligence stack."
 issuer: "Microsoft"
 date: "2026-03-27"
 image: "badge.svg"

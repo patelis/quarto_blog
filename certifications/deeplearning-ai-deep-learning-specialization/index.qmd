@@ -1,5 +1,6 @@
 ---
 title: "Deep Learning Specialization"
+description: "Andrew Ng's five-course deep learning specialization — neural networks from scratch, CNNs and ResNets for vision, RNNs and transformers for sequences."
 issuer: "DeepLearning.AI"
 date: "2022-11-13"
 image: "badge.svg"

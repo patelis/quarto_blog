@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Certified: Azure Data Scientist Associate (DP-100)"
+description: "End-to-end machine learning on Azure ML — building, tuning, and deploying scikit-learn pipelines with MLflow tracking and production monitoring."
 issuer: "Microsoft"
 date: "2025-12-04"
 image: "badge.svg"
