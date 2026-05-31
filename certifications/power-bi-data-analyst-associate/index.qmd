@@ -20,16 +20,6 @@ pdf: "/documents/power-bi-data-analyst-associate.pdf"
 verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/E60C5E51792BB0C5?sharingId=7B60741AD788454F"
 ---
 
-```{=html}
-<!-- FILL IN BEFORE PUBLISHING:
-  1. Update `date:` in the frontmatter to the date your PL-300 was issued
-  2. Replace REPLACE_ME in `verify-url:` and in the [Verify](…) link below
-  3. Drop the badge image at  certifications/power-bi-data-analyst-associate/badge.png
-  4. Drop the certificate PDF at documents/power-bi-data-analyst-associate.pdf
-  5. Update the "Issued" date at the bottom of this page
--->
-```
-
 [Download certificate (PDF)](/documents/power-bi-data-analyst-associate.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/E60C5E51792BB0C5?sharingId=7B60741AD788454F)
 
 ## Skills covered

@@ -1,0 +1,40 @@
+---
+title: "Machine Learning in Python with scikit-learn"
+description: "Practical machine learning with scikit-learn — building predictive pipelines, cross-validation, model selection, and hyperparameter tuning across linear and tree-based models."
+issuer: "INRIA"
+date: "2023-01-19"
+image: "badge.svg"
+categories: [ML, Python, ScikitLearn]
+skills:
+  - "scikit-learn"
+  - "Predictive Modelling Pipeline"
+  - "Feature Preprocessing"
+  - "Cross-Validation"
+  - "Model Selection"
+  - "Hyperparameter Tuning"
+  - "Linear Models"
+  - "Decision Trees"
+  - "Ensemble Methods"
+  - "Model Evaluation"
+pdf: "/documents/inria-ml-in-python-scikit-learn.pdf"
+verify-url: "https://openbadgefactory.com/obv3/credentials/3c24e554c6f06c8639a6583ccc1ed2eba04502f4"
+---
+
+[Download certificate (PDF)](/documents/inria-ml-in-python-scikit-learn.pdf){.btn .btn-primary} [Verify](https://openbadgefactory.com/obv3/credentials/3c24e554c6f06c8639a6583ccc1ed2eba04502f4)
+
+## Skills covered
+
+["Machine Learning in Python with scikit-learn"](https://inria.github.io/scikit-learn-mooc/) — a hands-on MOOC developed by the **Inria Learning Lab** (with scikit-learn \@ La Fondation Inria and probabl) and delivered on **FUN-MOOC**. It works through the full predictive-modelling workflow in **scikit-learn**:
+
+-   **Machine learning concepts** — the predictive-modelling framing, train/test methodology, and what a model actually learns
+-   **The predictive modelling pipeline** — data exploration, numerical and categorical preprocessing, and chaining steps with `Pipeline` and `ColumnTransformer` to avoid data leakage
+-   **Selecting the best model** — **overfitting vs underfitting**, validation and learning curves, and the bias–variance trade-off
+-   **Hyperparameter tuning** — manual tuning plus automated **grid-search** and **randomized-search**
+-   **Linear models** — regression and classification with feature engineering and regularisation
+-   **Decision trees** — classification, regression, and tree hyperparameters
+-   **Ensembles** — bagging, **random forests**, AdaBoost, and **gradient boosting**
+-   **Evaluating model performance** — baselines, **cross-validation** strategies, and classification/regression metrics
+
+## Issued
+
+INRIA (Inria Learning Lab) — 2023-01-19
