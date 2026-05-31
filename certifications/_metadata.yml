@@ -6,3 +6,6 @@ freeze: true
 
 # No banner-style title block on individual cert pages
 title-block-banner: false
+
+# Open external links (e.g. credential Verify links) in a new tab
+link-external-newwindow: true

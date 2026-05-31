@@ -17,7 +17,7 @@ skills:
 pdf: "/documents/swiss-risk-association-risk-management-fundamentals.pdf"
 ---
 
-[Download certificate (PDF)](/documents/swiss-risk-association-risk-management-fundamentals.pdf){.btn .btn-primary}
+[Download certificate (PDF)](/documents/swiss-risk-association-risk-management-fundamentals.pdf){.btn .btn-primary target="_blank" rel="noopener"}
 
 ## Skills covered
 

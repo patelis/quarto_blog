@@ -20,7 +20,7 @@ pdf: "/documents/power-bi-data-analyst-associate.pdf"
 verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/E60C5E51792BB0C5?sharingId=7B60741AD788454F"
 ---
 
-[Download certificate (PDF)](/documents/power-bi-data-analyst-associate.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/E60C5E51792BB0C5?sharingId=7B60741AD788454F)
+[Download certificate (PDF)](/documents/power-bi-data-analyst-associate.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/E60C5E51792BB0C5?sharingId=7B60741AD788454F){target="_blank" rel="noopener"}
 
 ## Skills covered
 

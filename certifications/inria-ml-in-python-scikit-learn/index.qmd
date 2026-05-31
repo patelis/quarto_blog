@@ -20,7 +20,7 @@ pdf: "/documents/inria-ml-in-python-scikit-learn.pdf"
 verify-url: "https://openbadgefactory.com/obv3/credentials/3c24e554c6f06c8639a6583ccc1ed2eba04502f4"
 ---
 
-[Download certificate (PDF)](/documents/inria-ml-in-python-scikit-learn.pdf){.btn .btn-primary} [Verify](https://openbadgefactory.com/obv3/credentials/3c24e554c6f06c8639a6583ccc1ed2eba04502f4)
+[Download certificate (PDF)](/documents/inria-ml-in-python-scikit-learn.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://openbadgefactory.com/obv3/credentials/3c24e554c6f06c8639a6583ccc1ed2eba04502f4){target="_blank" rel="noopener"}
 
 ## Skills covered
 

@@ -18,7 +18,7 @@ skills:
 pdf: "/documents/huggingface-agents-course.pdf"
 ---
 
-[Download certificate (PDF)](/documents/huggingface-agents-course.pdf){.btn .btn-primary}
+[Download certificate (PDF)](/documents/huggingface-agents-course.pdf){.btn .btn-primary target="_blank" rel="noopener"}
 
 > Course was completed in summer of 2025, but I fetched the certificate for HuggingFace a second time to attach here and it refreshed the date.
 

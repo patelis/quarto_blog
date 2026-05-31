@@ -20,7 +20,7 @@ pdf: "/documents/deeplearning-ai-math-for-ml-and-data-science.pdf"
 verify-url: "https://www.coursera.org/account/accomplishments/specialization/certificate/36QS18ODNUHT"
 ---
 
-[Download certificate (PDF)](/documents/deeplearning-ai-math-for-ml-and-data-science.pdf){.btn .btn-primary} [Verify](https://www.coursera.org/account/accomplishments/specialization/certificate/36QS18ODNUHT)
+[Download certificate (PDF)](/documents/deeplearning-ai-math-for-ml-and-data-science.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://www.coursera.org/account/accomplishments/specialization/certificate/36QS18ODNUHT){target="_blank" rel="noopener"}
 
 ## Skills covered
 

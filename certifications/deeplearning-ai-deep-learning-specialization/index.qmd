@@ -23,7 +23,7 @@ pdf: "/documents/deeplearning-ai-deep-learning-specialization.pdf"
 verify-url: "https://www.coursera.org/account/accomplishments/specialization/certificate/8T7J9YKFXU25"
 ---
 
-[Download certificate (PDF)](/documents/deeplearning-ai-deep-learning-specialization.pdf){.btn .btn-primary} [Verify](https://www.coursera.org/account/accomplishments/specialization/certificate/8T7J9YKFXU25)
+[Download certificate (PDF)](/documents/deeplearning-ai-deep-learning-specialization.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://www.coursera.org/account/accomplishments/specialization/certificate/8T7J9YKFXU25){target="_blank" rel="noopener"}
 
 ## Skills covered
 

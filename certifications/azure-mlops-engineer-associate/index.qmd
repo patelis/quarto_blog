@@ -21,7 +21,7 @@ pdf: "/documents/azure-mlops-engineer-associate.pdf"
 verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/3BC4736B13A5DB5C?sharingId=7B60741AD788454F"
 ---
 
-[Download certificate (PDF)](/documents/azure-mlops-engineer-associate.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/3BC4736B13A5DB5C?sharingId=7B60741AD788454F)
+[Download certificate (PDF)](/documents/azure-mlops-engineer-associate.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/3BC4736B13A5DB5C?sharingId=7B60741AD788454F){target="_blank" rel="noopener"}
 
 ## Skills covered
 

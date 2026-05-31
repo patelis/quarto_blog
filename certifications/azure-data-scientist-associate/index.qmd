@@ -19,7 +19,7 @@ pdf: "/documents/azure-data-scientist-associate.pdf"
 verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/2E2088B222FF547A?sharingId=7B60741AD788454F"
 ---
 
-[Download certificate (PDF)](/documents/azure-data-scientist-associate.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/2E2088B222FF547A?sharingId=7B60741AD788454F)
+[Download certificate (PDF)](/documents/azure-data-scientist-associate.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/2E2088B222FF547A?sharingId=7B60741AD788454F){target="_blank" rel="noopener"}
 
 ## Skills covered
 

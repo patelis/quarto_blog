@@ -18,7 +18,7 @@ pdf: "/documents/azure-ai-fundamentals_900.pdf"
 verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/8275C0878DDB0131?sharingId=7B60741AD788454F"
 ---
 
-[Download certificate (PDF)](/documents/azure-ai-fundamentals.pdf){.btn .btn-primary} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/8275C0878DDB0131?sharingId=7B60741AD788454F)
+[Download certificate (PDF)](/documents/azure-ai-fundamentals.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/8275C0878DDB0131?sharingId=7B60741AD788454F){target="_blank" rel="noopener"}
 
 ## Skills covered
 
