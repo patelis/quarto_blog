@@ -1,15 +1,16 @@
 ---
-title: "Page not found"
+title: "404 — Page not found"
 page-layout: full
 sidebar: false
 toc: false
-search: false
 ---
 
-The page you're looking for doesn't exist (or has moved).
+::: {.text-center}
+Looks like that page wandered off — it doesn't exist, has moved, or never made it past a draft.
 
-Try one of these instead:
+Here's the way back:
 
-- [Home](/)
-- [Blog](/blog.html)
-- [Portfolio](/portfolio.html)
+[Home](/){.btn .btn-primary role="button"} [Blog](/blog.html){.btn .btn-outline-primary role="button"} [Portfolio](/portfolio.html){.btn .btn-outline-primary role="button"} [Certifications](/certifications.html){.btn .btn-outline-primary role="button"}
+
+Or use the search box in the top bar to track down what you were after.
+:::
