@@ -40,9 +40,9 @@ When not at work or busy with other data-related projects, I enjoy watching movi
 ::: {.my-focus}
 ### My Focus
 
--   <i class="bi bi-robot"></i>   **Agentic GenAI** (LangGraph, Microsoft Foundry, Azure OpenAI)
--   <i class="bi bi-database-fill"></i>   **Data & ML Engineering** (Polars, Scikit-Learn, Databricks/PySpark, FastAPI)
--   <i class="bi bi-graph-up-arrow"></i>   **Quantitative Risk Modelling** (Stress Testing, Scenario Analysis)
+-   <i class="bi bi-robot"></i> **Agentic GenAI** (LangGraph, Microsoft Foundry, Azure OpenAI)
+-   <i class="bi bi-database-fill"></i> **Data & ML Engineering** (Polars, Scikit-Learn, Databricks/PySpark, FastAPI)
+-   <i class="bi bi-graph-up-arrow"></i> **Quantitative Risk Modelling** (Stress Testing, Scenario Analysis)
 :::
 
 [Explore my Portfolio](portfolio.qmd){.btn .btn-primary role="button"}   [Get in touch](mailto:kpatelis@outlook.com){.btn .btn-outline-primary role="button"}

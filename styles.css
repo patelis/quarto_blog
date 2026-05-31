@@ -149,6 +149,9 @@ body.quarto-dark .list-group-item {
   border-radius: 10px;
   padding: 1rem 1.5rem 1.25rem;
   margin: 1.25rem 0 1.5rem;
+  /* override the justified text inherited from .about-contents, which
+     stretches the spaces on these short lines into huge gaps */
+  text-align: left;
 }
 
 .my-focus h3 {
@@ -164,15 +167,18 @@ body.quarto-dark .list-group-item {
   margin-bottom: 0;
 }
 
-.my-focus li {
+/* `.my-focus ul li` (not `.my-focus li`) so these beat the more global
+   `.about-contents li { display: flex }` rule that otherwise breaks the layout */
+.my-focus ul li {
+  display: block;
   margin-bottom: 0.4rem;
 }
 
-.my-focus li:last-child {
+.my-focus ul li:last-child {
   margin-bottom: 0;
 }
 
-.my-focus li i {
+.my-focus ul li i {
   color: var(--primary-color);
   margin-right: 0.4rem;
 }
