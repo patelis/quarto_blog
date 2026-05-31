@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - "documents/"
+    - "robots.txt"
   render:
     - "*.qmd"
 website:
