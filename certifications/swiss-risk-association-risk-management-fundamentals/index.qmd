@@ -1,0 +1,37 @@
+---
+title: "Risk Management Fundamentals (Level I)"
+description: "UBS Risk Curriculum attestation certified by the Swiss Risk Association — foundations across market, credit, reputational, treasury, non-financial, prudential-regulatory, and sustainability & climate risk."
+issuer: "Swiss Risk Association"
+date: "2025-12-19"
+image: "badge.png"
+categories: [Risk, Finance]
+skills:
+  - "Financial Risk"
+  - "Market Risk"
+  - "Credit Risk"
+  - "Reputational Risk"
+  - "Treasury Risk (L&F, IRRBB)"
+  - "Non-Financial Risk"
+  - "Prudential Regulation"
+  - "Sustainability & Climate Risk"
+pdf: "/documents/swiss-risk-association-risk-management-fundamentals.pdf"
+---
+
+[Download certificate (PDF)](/documents/swiss-risk-association-risk-management-fundamentals.pdf){.btn .btn-primary}
+
+## Skills covered
+
+Part of the **UBS Risk Curriculum** (Attestate 2025, Level I), certified by the **Swiss Risk Association**. The programme builds foundations across the major financial and non-financial risk types:
+
+-   **Introduction to Financial Risk**
+-   **Market Risk Fundamentals**
+-   **Credit Risk Fundamentals**
+-   **Reputational Risk Fundamentals**
+-   **Introduction to Treasury Risk** — Liquidity & Funding and **IRRBB**
+-   **Introduction to Non-Financial Risk**
+-   **Introduction to Prudential Regulatory Frameworks**
+-   **Introduction to Sustainability & Climate Risk**
+
+## Issued
+
+Swiss Risk Association — UBS Risk Curriculum, 2025

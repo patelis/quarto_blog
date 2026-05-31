@@ -68,3 +68,6 @@ rsconnect/
 # Virtual environment folder
 .venv/*
 
+# Private CV drafts (not for publication)
+cv/
+
