@@ -38,6 +38,17 @@ body.quarto-dark {
   /* Force Primary Color to match Cosmo Blue, overriding Darkly's Green */
   --bs-primary: #2780e3;
   --primary-color: #2780e3;
+
+  /* Depth: a faint primary glow from the top instead of a flat fill */
+  background-image: radial-gradient(1100px 520px at 50% -8%, rgba(39, 128, 227, 0.10), transparent 62%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Lift cards off the darker backdrop for a sense of elevation */
+body.quarto-dark .card,
+body.quarto-dark .quarto-grid-item {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 /* Ensure links and other elements respect the dark theme */
