@@ -1,6 +1,6 @@
 # kpatelis.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/84978100-8670-4c87-9bd7-b0504beb1274/deploy-status)](https://app.netlify.com/sites/silver-tulumba-34ca65/deploys)
+[![Deploy](https://github.com/patelis/quarto_blog/actions/workflows/publish.yml/badge.svg)](https://github.com/patelis/quarto_blog/actions/workflows/publish.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Built with Quarto](https://img.shields.io/badge/Built%20with-Quarto-39729E?logo=quarto&logoColor=white)](https://quarto.org/)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)

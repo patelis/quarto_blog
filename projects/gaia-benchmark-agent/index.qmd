@@ -33,8 +33,7 @@ GAIA grades answers via exact-string match. "Paris", "paris", and "The answer is
 
 By splitting responsibilities, the processor reasons in whatever shape works best; chains of thought, partial calculations, tool-call traces, half-formed hypotheses. Then a dedicated formatter, with one specific task and bound to *one tool only*, ensures that the final answer is given into the exact format GAIA wants. The cost is one extra LLM call per task; the benefit is that the contract is now enforced by the tool schema.
 
-```{python}
-#| eval: false
+```python
 @tool
 def emit_final_answer(answer: str) -> str:
     """Emit the final answer to the GAIA question in the strict scoring format.
