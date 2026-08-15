@@ -1,0 +1,40 @@
+---
+title: "Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103)"
+description: "Building and deploying AI apps and agents on Azure — Azure AI Foundry, generative AI, OpenAI, RAG pipelines, multi-agent orchestration, computer vision, speech, and document intelligence."
+issuer: "Microsoft"
+date: "2026-06-23"
+image: "badge.svg"
+categories: [Cloud, Azure, AI, ML]
+skills:
+  - "Azure AI Foundry"
+  - "Azure OpenAI"
+  - "Responses API"
+  - "Generative AI"
+  - "Agentic AI"
+  - "RAG"
+  - "Multi-agent Orchestration"
+  - "Computer Vision"
+  - "NLP"
+  - "Speech"
+  - "Document Intelligence"
+  - "Content Safety"
+  - "Responsible AI"
+pdf: "/documents/azure-ai-apps-and-agents-developer-associate.pdf"
+verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/F8E0D82595F50CAC?sharingId=7B60741AD788454F"
+---
+
+[Download certificate (PDF)](/documents/azure-ai-apps-and-agents-developer-associate.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/F8E0D82595F50CAC?sharingId=7B60741AD788454F){target="_blank" rel="noopener"}
+
+## Skills covered
+
+-   Planning and managing Azure AI solutions with **Azure AI Foundry** — model selection across LLMs, SLMs, and multimodal models; infrastructure design, CI/CD integration, quota management, and cost footprint control
+-   Building **generative AI** applications — deploying and consuming models, implementing **retrieval-augmented generation (RAG)** with semantic, hybrid, and vector search, and evaluating outputs for relevance, quality, and safety
+-   Designing and deploying **agents** — function-calling, conversation memory, tool integration (APIs, knowledge stores, search), autonomous workflows with approval controls, and **multi-agent orchestration**
+-   **Computer vision** and multimodal workflows — image and video generation, visual Q&A, alt-text generation, and Content Understanding pipelines for object and region identification
+-   **Text analysis** and **speech** — entity extraction, sentiment, summarisation, translation, and speech-to-text/text-to-speech for agentic modalities
+-   **Information extraction** — OCR, layout analysis, and field extraction using Content Understanding to produce grounded structured outputs for RAG and agent tools
+-   Applying **responsible AI** across the full solution — safety filters, guardrails, risk detection, trace logging, provenance metadata, and agent oversight controls
+
+## Issued
+
+Microsoft — 2026-06-23
