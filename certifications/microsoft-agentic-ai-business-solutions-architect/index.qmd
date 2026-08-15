@@ -1,0 +1,37 @@
+---
+title: "Microsoft Certified: Agentic AI Business Solutions Architect (AB-100)"
+description: "Architecting end-to-end agentic AI solutions for business — Cloud Adoption Framework, Power Platform Well-Architected Framework, multi-agent orchestration across Copilot Studio and Azure AI Foundry, MCP/A2A protocols, and responsible AI governance."
+issuer: "Microsoft"
+date: "2026-07-16"
+image: "badge.svg"
+categories: [Cloud, Azure, AI, Agents]
+skills:
+  - "Cloud Adoption Framework (CAF)"
+  - "Well-Architected Framework (WAF)"
+  - "Azure AI Foundry"
+  - "Copilot Studio"
+  - "Microsoft 365 Copilot"
+  - "Multi-agent Orchestration"
+  - "Model Context Protocol (MCP)"
+  - "Agent-to-Agent (A2A)"
+  - "Application Lifecycle Management"
+  - "Responsible AI"
+  - "AI Governance"
+pdf: "/documents/microsoft-agentic-ai-solutions-architect.pdf"
+verify-url: "https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/A0ECC9E3CA6FF5C6?sharingId=7B60741AD788454F"
+---
+
+[Download certificate (PDF)](/documents/microsoft-agentic-ai-solutions-architect.pdf){.btn .btn-primary target="_blank" rel="noopener"} [Verify](https://learn.microsoft.com/api/credentials/share/en-us/KonstantinosPatelis-6424/A0ECC9E3CA6FF5C6?sharingId=7B60741AD788454F){target="_blank" rel="noopener"}
+
+## Skills covered
+
+-   Driving AI adoption strategies using the **Cloud Adoption Framework (CAF)** for Azure — requirements analysis, ROI evaluation, and agentic-first solution roadmaps
+-   Applying the **Microsoft Power Platform Well-Architected Framework (WAF)** to intelligent application workloads
+-   Designing multi-agent solutions with **Azure AI Foundry**, **Copilot Studio**, and **Microsoft 365 Copilot** — task, autonomous, and prompt/response agents
+-   Working with open interoperability standards: **Model Context Protocol (MCP)** and **Agent-to-Agent (A2A)** protocol
+-   Designing ALM processes for agents, custom models, and AI components across the full Microsoft AI platform
+-   Governing, securing, and monitoring agentic workloads — responsible AI, prompt manipulation mitigations, data residency, and audit trails
+
+## Issued
+
+Microsoft — 2026-07-16
